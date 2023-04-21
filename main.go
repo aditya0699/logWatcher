@@ -11,10 +11,6 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-// CheckOrigin := func(r *http.Request) bool{
-// 	return true
-// }
-
 var ClientUpgrader = websocket.Upgrader{
 	ReadBufferSize:  1024,
 	WriteBufferSize: 1024,
@@ -23,7 +19,7 @@ var ClientUpgrader = websocket.Upgrader{
 	},
 }
 
-var logFilePath string = "/Users/adityaagrawal/Downloads/testServer.txt"
+var logFilePath string = "/path/to/your/file.txt"
 
 // We can have a channel and the server will be streaming updates in that channel
 
